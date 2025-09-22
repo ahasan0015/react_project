@@ -1,0 +1,48 @@
+#sidebar{
+    width: 280px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: linear-gradient(rgb(51, 168, 166));
+    color: #fff;
+    padding:20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.nav-link:hover{
+    color:rgb(52, 31, 107); 
+}
+.profile-img-hover {
+  transition: transform 0.3s ease;
+}
+
+.profile-img-hover:hover {
+  transform: scale(1.1); /* জুম ইন */
+}
+
+@media screen and (max-width: 768px){
+    #sidebar{
+        left: -280px;
+    }
+}
+.animated-text {
+  overflow: hidden; /* Ensures the content is hidden */
+  border-right: .15em solid orange; /* Cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation:
+    typing 3.5s steps(30, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
