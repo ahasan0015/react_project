@@ -10,6 +10,7 @@
     top: 0;
     left: 0;
     z-index: 1;
+    transition: all .3s ease-in-out;
 }
 .nav-link:hover{
     color:rgb(52, 31, 107); 
@@ -25,6 +26,18 @@
 @media screen and (max-width: 768px){
     #sidebar{
         left: -280px;
+    }
+    #sidebar-toggle:checked ~ #sidebar{
+      left:0px;
+    }
+}
+
+@media scree and (max-width:991px){
+   #sidebar{
+        left: -280px;
+    }
+    #sidebar-toggle:checked ~ #sidebar{
+      left:0px;
     }
 }
 .animated-text {

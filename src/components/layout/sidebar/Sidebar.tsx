@@ -5,7 +5,12 @@ function Sidebar() {
     return (
         <>
         <input type="checkbox" id='sidebar-toggle' className="sidebar-toggle d-none"/>
-            <div id='sidebar'>
+            <div id='sidebar' className='bg-dark shadow-lg'>
+                <div className='text-end'>
+                    <label htmlFor="sidebar-toggle">
+                        <i className='fa-solid fa-times'></i>
+                    </label>
+                </div>
                 <h3 className='text-center'>Admin</h3>
                 <div className='text-center'>
                     <img src={Profile} alt="profile" width={80} height={80} className='rounded-circle profile-img-hover' />
